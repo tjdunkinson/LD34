@@ -30,7 +30,6 @@ public class Player : MonoBehaviour {
 		ApplyAccel ();
 
 
-
 		rigid.velocity = velocity;
 	}
 
@@ -54,7 +53,7 @@ public class Player : MonoBehaviour {
 		}
 
 		velocity.y -= friction / (topSpeed - velocity.y);
-		print (friction / (topSpeed - velocity.y));
+
 		if (velocity.y > topSpeed)
 			velocity = new Vector2 (0, topSpeed);
 
